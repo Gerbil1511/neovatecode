@@ -6,7 +6,14 @@ import 'aos/dist/aos.css'; // AOS for scroll animations
 
 // Initailise AOS for animations
 import AOS from 'aos';
-AOS.init();
+
+useEffect(() => {
+AOS.init({
+  duration: 1000,
+  once: true, // Only animate on first scroll
+  easing: 'ease-out-quart',
+});
+}, []);
 
 // Render the app to the DOM
 ReactDOM.createRoot(document.getElementById('app')).render(
@@ -14,3 +21,4 @@ ReactDOM.createRoot(document.getElementById('app')).render(
     <App />
   </React.StrictMode>,
 );
+

@@ -1,10 +1,23 @@
 module.exports = {
     content: [
         './index.html',
-        './src/**/*.{js,ts,jsx,tsx}', // Add the paths to your template files
+        './src/**/*.{js,jsx}', // Add the paths to your template files
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                heading: ['Anton', 'sans-serif'],
+                body: ['Space Grotesk', 'sans-serif'],
+                // heading: ['"Bebas Neue"', 'sans-serif'],
+                // body: ['"DM Sans"', 'sans-serif'],
+            },
+            colors: {
+                brand: '#111111',
+                accent: '#ff004d',
+
+            },
+        },
     },
     plugins: [],
+    darkMode: 'class',
 };

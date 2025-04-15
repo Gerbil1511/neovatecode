@@ -3,22 +3,36 @@ import '../App.scss';
 
 const Services = () => {
     return (
-        <section id="services" className="services">
-            <h2>Our Services</h2>
-            <div className="service">
-                <h3>Responsive Web Design</h3>
-                <p>Custom websites built with semantic HTML and CSS/SCSS, optimized for all devices and screen sizes.</p>
-            </div>
-            <div className="service">
-                <h3>Interactive Web Development</h3>
-                <p>Enhance your website with dynamic, interactive elements using JavaScript and TypeScript.</p>
-            </div>
-            <div className="service">
-                <h3>Backend Development</h3>
-                <p>Secure, scalable backend solutions with Python, Django, and Node.js, tailored to your needs.</p>
+        <section className="col-span-full border-t-4 border-brand pt-16 pb-12">
+            <h2 className="font-heading text-5xl uppercase tracking-tight mb-10">
+                Services
+            </h2>
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                {[
+                    'Full-Stack Web Development',
+                    'Responsive, Mobile-First Design',
+                    'UI/UX Design & Prototyping',
+                    'API Integration,Custom CMS & Admin Dashboards',
+                    'Landing Pages & Microsites',
+                    'Accessibility Audits',
+                    'Performance Optimization',
+                    'Maintenance & Technical Support',
+                ].map((service, i) => (
+                    <div
+                        key={i}
+                        className="border-l-4 border-accent pl-4 hover:bg-accent hover:text-white transition"
+                    >
+                        <h3 className="font-heading text-2xl uppercase mb-2">
+                            {service}
+                        </h3>
+                        <p className="text-sm leading-relaxed">
+                            Lorem ipsum dolor sit amet consectetur, providing sleek tailored solutions.
+                        </p>
+                    </div>
+                ))}
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default Services;

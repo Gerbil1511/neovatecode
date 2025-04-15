@@ -1,21 +1,26 @@
-import React from 'react';
-import './App.scss';  // Import the global css file for now
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import Hero from './components/Hero'
+import About from './components/About'
+import Services from './components/Services'
+import EnquiryForm from './components/EnquiryForm'
+import Testimonials from './components/Testimonials'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
+import Layout from './components/Layout'
 
-const App = () => {
+function App() {
     return (
-        <div>
-            <Header />
+        <div className="font-body bg-white text-brand">
             <Hero />
-            <About />
-            <Services />
-            <Contact />
+            <Layout>
+                <About />
+                <Services />
+                <Projects />
+                <Testimonials />
+                <EnquiryForm />
+            </Layout>
+            <Footer />
         </div>
     );
-};
+}
 
-export default App;
+export default App
