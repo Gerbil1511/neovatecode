@@ -7,11 +7,10 @@ const About = () => {
 
                 {/* Vertical Heading for MD+ */}
                 <div className="hidden md:flex md:col-span-1 justify-center items-center relative min-h-[200px]">
-                    <h2 className="font-heading text-5xl uppercase tracking-tight text-brand rotate-[-90deg] origin-left absolute left-6 top-1/2 -translate-y-1/2">
+                    <h2 className="font-heading text-5xl uppercase tracking-tight text-brand rotate-[-90deg] origin-left absolute left-6 top-1/2 -translate-y-1/2 ">
                         About
                     </h2>
                 </div>
-                
 
                 {/* Horizontal Heading for SM */}
                 <h2 className="font-heading text-5xl uppercase tracking-tight text-brand md:hidden mb-6">

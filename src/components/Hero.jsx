@@ -26,11 +26,11 @@ const Hero = () => {
 
       {/* Image Placeholder */}
       <div className="md:w-1/2 relative aspect-square max-w-md w-full mx-auto">
-        <div className="absolute inset-0 bg-mold/90 -rotate-2"></div>
+        <div className="absolute inset-0 bg-mold -rotate-3"></div>
         <img
-          src="https://via.placeholder.com/500x500.png?text=Editorial+Portrait"
-          alt="Editorial style"
-          className="relative z-10 w-full h-full object-cover shadow-[8px_8px_0_rgba(0,0,0,0.2)]"
+          src="/images/.jpg"
+          alt="Coders Collaborating At Work"
+          className="relative z-10 w-full h-full object-cover shadow-[8px_8px_0_rgba(0,0,0,0.9)]"
         />
       </div>
     </section>

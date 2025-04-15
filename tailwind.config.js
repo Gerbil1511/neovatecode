@@ -17,7 +17,9 @@ module.exports = {
                 mold: '#6b705c',       // olive
                 bruise: '#6a4c93',     // muted purple
                 neon: '#39ff14',       // acid green
-
+                mustard: '#b08a24',    // dark mustard
+                rust: '#964329',       // dark orange/red
+                stone: '#b8ab7f',      // dark beige
             },
         },
     },
