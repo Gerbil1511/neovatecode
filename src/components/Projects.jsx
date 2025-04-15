@@ -7,9 +7,7 @@ const Projects = () => {
             <h2 className="font-heading text-5xl uppercase tracking-tight mb-10">
                 Projects
             </h2>
-            <div className="bg-accent text-white px-4 py-2 transform -skew-x-6 inline-block text-lg uppercase font-heading tracking-widest">
-                Let’s Build Something Bold
-            </div>
+            
 
             <div className="grid gap-10">
                 {[1, 2, 3].map((project) => (

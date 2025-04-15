@@ -12,9 +12,8 @@ const Services = () => {
                     'Full-Stack Web Development',
                     'Responsive, Mobile-First Design',
                     'UI/UX Design & Prototyping',
-                    'API Integration,Custom CMS & Admin Dashboards',
                     'Landing Pages & Microsites',
-                    'Accessibility Audits',
+                    'Accessibility Audits & Fixes',
                     'Performance Optimization',
                     'Maintenance & Technical Support',
                 ].map((service, i) => (

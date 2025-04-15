@@ -8,12 +8,15 @@ module.exports = {
             fontFamily: {
                 heading: ['Anton', 'sans-serif'],
                 body: ['Space Grotesk', 'sans-serif'],
-                // heading: ['"Bebas Neue"', 'sans-serif'],
-                // body: ['"DM Sans"', 'sans-serif'],
             },
             colors: {
-                brand: '#111111',
-                accent: '#ff004d',
+                brand: '#111111',      // black
+                accent: '#e63946',     // gritty red
+                paper: '#f5f5f4',      // dusty white
+                grime: '#2d2d2d',      // charcoal
+                mold: '#6b705c',       // olive
+                bruise: '#6a4c93',     // muted purple
+                neon: '#39ff14',       // acid green
 
             },
         },

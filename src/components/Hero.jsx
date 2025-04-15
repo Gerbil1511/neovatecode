@@ -3,20 +3,35 @@ import '../App.scss';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen px-6 py-20 flex flex-col md:flex-row justify-between items-center gap-10 border-b-2 border-brand">
-      <div className="flex-1">
-        <h1 className="text-6xl md:text-8xl font-heading uppercase leading-none tracking-tight" data-aos="fade-down">
-          Neovate Code
-        </h1>
-        <p className="mt-6 text-lg max-w-xl font-light tracking-wide">
-          Full-stack web development with a creative, editorial twist. Let’s make your next digital project unforgettable.
+    <section
+      id="hero"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 gap-10 bg-[#f8f8f6] dark:bg-[#0d0d0d] border-b border-brand"
+    >
+      {/* Text Content */}
+      <div className="md:w-1/2 space-y-6">
+        <h2 className="text-5xl md:text-6xl font-heading tracking-tighter uppercase leading-tight text-brand dark:text-white">
+          Neovate Code :  <br />
+          Creative code for <span className="italic text-accent">brave brands</span>
+        </h2>
+        <p className="text-base md:text-lg font-sans text-neutral-700 dark:text-neutral-300 max-w-lg">
+          Frontend & Full-stack tech solutions styled with attitude. Let’s make your next digital project unforgettable.
         </p>
-        <button className="mt-10 px-6 py-3 border-2 border-brand text-brand font-heading uppercase hover:bg-brand hover:text-white transition-all duration-300">
-          Work with me
-        </button>
+        <a
+          href="#contact"
+          className="inline-block font-heading uppercase tracking-widest text-sm px-6 py-3 border-2 border-brand text-brand dark:text-white dark:border-white hover:bg-brand hover:text-white dark:hover:bg-white dark:hover:text-[#0d0d0d] transition-all"
+        >
+          Let’s Work Together
+        </a>
       </div>
-      <div className="flex-1">
-        <img src="/hero-img.png" alt="Hero visual" className="w-full max-w-md mx-auto" />
+
+      {/* Image Placeholder */}
+      <div className="md:w-1/2 relative aspect-square max-w-md w-full mx-auto">
+        <div className="absolute inset-0 bg-mold/90 -rotate-2"></div>
+        <img
+          src="https://via.placeholder.com/500x500.png?text=Editorial+Portrait"
+          alt="Editorial style"
+          className="relative z-10 w-full h-full object-cover shadow-[8px_8px_0_rgba(0,0,0,0.2)]"
+        />
       </div>
     </section>
   );

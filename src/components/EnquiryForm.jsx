@@ -6,7 +6,7 @@ const EnquiryForm = () => {
     return (
         <section className="col-span-full border-t-4 border-brand pt-16 pb-24">
             <h2 className="font-heading text-5xl uppercase tracking-tight mb-10">
-                Work With Me
+                Work With Us
             </h2>
             <form className="grid gap-6 max-w-3xl">
                 <input
@@ -20,7 +20,7 @@ const EnquiryForm = () => {
                     className="border border-brand px-4 py-2 bg-white text-brand placeholder:text-brand"
                 />
                 <textarea
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell us about your project..."
                     className="border border-brand px-4 py-2 h-32 bg-white text-brand placeholder:text-brand"
                 ></textarea>
                 <button
